@@ -164,7 +164,7 @@ export function Refund() {
           hover:opacity-70 transition ease-linear"
         >
           <img src={fileSvg} alt="Ícone de arquivo" />
-          Abrir comprovantes
+          Abrir comprovante
         </a>
       ) : (
         <Upload
