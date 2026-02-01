@@ -6,7 +6,7 @@ import { Upload } from "../components/Upload";
 import { Button } from "../components/Button";
 import { useNavigate, useParams } from "react-router";
 import fileSvg from "../assets/file.svg";
-import { set, z, ZodError } from "zod";
+import { z, ZodError } from "zod";
 import { AxiosError } from "axios";
 import { api } from "../services/api";
 import { formatCurrency } from "../utils/formatCurrency";
@@ -173,7 +173,9 @@ export function Refund() {
         />
       )}
 
-      <Button type="submit">{params.id ? "Voltar" : "Enviar"}</Button>
+      <Button type="submit" isLoading={isLoading}>
+        {params.id ? "Voltar" : "Enviar"}
+      </Button>
     </form>
   );
 }
