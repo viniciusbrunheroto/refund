@@ -163,7 +163,7 @@ export function Refund() {
           className="text-sm text-green-100 font-semibold flex items-center justify-center gap-2 my-6
           hover:opacity-70 transition ease-linear"
         >
-          <img src={fileSvg} alt="Ícone de arquivo" />
+          <img src={fileSvg} alt="Ícone de arquiv" />
           Abrir comprovante
         </a>
       ) : (
